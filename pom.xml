@@ -28,13 +28,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<!-- jpa -->
-		<dependency>
-			<groupId>javax.persistence</groupId>
-			<artifactId>persistence-api</artifactId>
-			<version>1.0.2</version>
-		</dependency>
-
 
 		<!-- Use MySQL Connector-J -->
 
@@ -48,7 +41,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
+		<!-- <dependency> <groupId>io.ebean</groupId> <artifactId>ebean-spring</artifactId> 
+			<version>10.4.2</version> </dependency> -->
+		<!-- https://mvnrepository.com/artifact/io.ebean/persistence-api -->
+		<dependency>
+			<groupId>io.ebean</groupId>
+			<artifactId>persistence-api</artifactId>
+			<version>2.2.1</version>
+		</dependency>
+
 		<!-- ebean -->
 		<dependency>
 			<groupId>io.ebean</groupId>
@@ -88,6 +90,7 @@
 					</tiles>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 </project>
