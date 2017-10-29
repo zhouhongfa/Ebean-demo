@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+
+	<!-- LOGBACK configuration -->
+	<!-- SQL and bind values -->
+	<logger name="io.ebean.SQL" level="TRACE" />
+
+	<!-- Transaction Commit and Rollback events -->
+	<logger name="io.ebean.TXN" level="TRACE" />
+
+	<!-- LOGBACK configuration -->
+
+	<!-- Summary level details -->
+	<logger name="io.ebean.SUM" level="TRACE" />
+
+</configuration>
+
