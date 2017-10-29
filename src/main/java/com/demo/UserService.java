@@ -17,7 +17,8 @@ public class UserService {
 		return ebeanServer.find(User.class).findList();
 	}
 
-	public User getById(Integer id) {
-		return ebeanServer.find(User.class).where().eq("id", id).findOne();
+	public List<Mail> getById(Integer id) {
+
+		return ebeanServer.find(Mail.class).findList();
 	}
 }

@@ -19,7 +19,7 @@ public class Controller {
 	}
 
 	@RequestMapping("user/getById")
-	public User getById(@RequestParam(value = "id") Integer id) {
+	public List<Mail> getById(@RequestParam(value = "id") Integer id) {
 		return userService.getById(id);
 	}
 
