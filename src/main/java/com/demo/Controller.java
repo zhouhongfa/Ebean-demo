@@ -23,4 +23,9 @@ public class Controller {
 		return userService.getById(id);
 	}
 
+	@RequestMapping("/test")
+	public List test() {
+		return userService.test();
+	}
+
 }

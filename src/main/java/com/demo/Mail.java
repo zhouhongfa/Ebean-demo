@@ -1,5 +1,7 @@
 package com.demo;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -10,11 +12,18 @@ import io.ebean.Model;
 
 @Entity
 @Table(name = "email")
-public class Mail extends Model {
+public class Mail extends Model implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	private Integer id;
 
 	private String mail;
+
+	private Integer user_id;
 
 	@ManyToOne
 	@JoinColumn(name = "user_id")
